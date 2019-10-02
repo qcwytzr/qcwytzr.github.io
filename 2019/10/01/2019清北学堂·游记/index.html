@@ -17,7 +17,7 @@
 <meta property="og:description" content="被巨巨们被虐到自闭的八天">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://qcwytzr.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-01T11:40:34.245Z">
+<meta property="og:updated_time" content="2019-10-01T14:33:59.832Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019清北学堂·游记">
 <meta name="twitter:description" content="被巨巨们被虐到自闭的八天">
@@ -159,7 +159,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 19 words)
+                    7 minutes read (About 989 words)
                 </span>
                 
                 
@@ -175,7 +175,16 @@
             <p>被巨巨们被虐到自闭的八天</p>
 <a id="more"></a> 
 
-<p>lyq神仙再次ak</p>
+<hr>
+<h3 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h3><p>​    一早上就考了一场试，T1刚开始以为是线段树，后来嫌麻烦用Deque做了，考场预计得分80左右。T2看到数据范围以后的确想到了正解状压DP，但是因为没有办法解决加入时间以后变成三维DP会空间不够的问题，最后还是用了dfs来解，觉得18的点完全没有办法卡过去啊，本来准备打n=1的情况下的DP的也没时间了。T3的话完全没有细看，暴力完全没有时间敲，最后还是不了了之。</p>
+<p>​    预计得分：80+60+0=140</p>
+<p>​    实际得分：100+0+0=100</p>
+<p>​    看到成绩的时候吓了一大跳，因为完全没有想到T2会爆零，去检查了上交的程序才发现交成了有问题的，样例都没有过，全部出了零，真·爆零（笑）。T1竟然是正解，看好多人都只拿了90，也幸亏T1稍微稳了一点才没有太丢人。T3好像没人做出来的样子，但是有几个人输出0竟然拿了5分。这次考试时间的分配有很大问题，T1题目读反了导致我白打了一个线段树，在发现我手模结果和样例输出不一样才反应过来，以后做题要先理解样例再敲程序了。花费太多时间在T1上也导致了我其他题都稍微有些仓促，可以说这次考试中我很多值得可惜的地方了。</p>
+<p>​    中午随便吃了点什么，去了ptb昨天晚上去的小饭店，味道异常的不错，但是他竟然把鸭肠看成了牛肚……</p>
+<p>​    下午开始讲题，T1这样做就可以了，大家出错也大多是什么没有清空之类的小问题，没有什么区分度。T2其实已经尽力了，只能说对于DP的理解还很不到位吧，原来最终得到的价值可以直接通过状压算出来，所以大可不必存下价值，而可以把时间放进数组里面去，这样就是二维了。还有一个小优化就是第二维”位置”只可能是状压中已经为1的点（因为0的点还没走到过怎么可能是当前的），所以只需要枚举为1的就行了，这样DP的空间复杂度就到了可以接受的范围。T3概率题实际上还是没有弄的很懂，回房间再琢磨一下……</p>
+<p>​    查了一些发现老师竟然是十二省联考“皮配”的出题人，怪不得这么钟爱DP，课后给我们拓展对的题目也有好多DP题。有一道“子矩阵”特别喜欢，状态转移方程是：设f[i][j]表示在这个r*m的矩阵中，在其前i列中选择j列（且选的列中包括第i列），组成的子矩阵中，最小值（即其相邻元素的差的绝对值的和的最小值）是多少。具体是：<br>$$<br>f[i][j]=min(f[k][j-1]+sum[i]+c[i][k])<br>$$<br>sum是这一行所有元素的值，c则是i和k两行的差的绝对值，可以说是很玄妙了，很喜欢这道题。</p>
+<p>​    还有就是一些 骚方法/思路 了，包括但不限于<a href="https://blog.csdn.net/qq_34416123/article/details/82972445" target="_blank" rel="noopener"><em>对顶堆</em></a>，<a href="(https://baike.baidu.com/item/斯特林公式/9583086?fr=aladdin)"><em>斯特林公式</em></a>，和已经知道的哈弗曼树，觉的都是很有用的小方法qaq</p>
+<p>2019.10.01 22:33于巨化宾馆</p>
 
         </div>
         
@@ -331,7 +340,11 @@
             <h3 class="menu-label">
                 Catalogue
             </h3>
-            
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Day-1">
+        <span class="has-mr-6">1</span>
+        <span>Day 1</span>
+        </a></li></ul>
         </div>
     </div>
 </div>
